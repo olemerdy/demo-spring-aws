@@ -1,0 +1,5 @@
+[versions]
+spring-cloud-aws = "4.0.0"
+
+[libraries]
+spring-cloud-aws= { module = "io.awspring.cloud:spring-cloud-aws-dependencies", version.ref = "spring-cloud-aws" }
