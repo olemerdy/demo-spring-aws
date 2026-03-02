@@ -1,5 +1,10 @@
 [versions]
+spotless = "8.2.1"
+spring-boot = "4.0.3"
 spring-cloud-aws = "4.0.0"
+spring-dependency-management = "1.1.7"
 
-[libraries]
-spring-cloud-aws= { module = "io.awspring.cloud:spring-cloud-aws-dependencies", version.ref = "spring-cloud-aws" }
+[plugins]
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version.ref = "spring-dependency-management" }

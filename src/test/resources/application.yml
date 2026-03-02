@@ -1,4 +1,5 @@
+---
 spring:
   cloud:
     aws:
-      endpoint: localhost:4566
+      endpoint: "localhost:4566"
