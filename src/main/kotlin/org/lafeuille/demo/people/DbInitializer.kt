@@ -9,10 +9,9 @@ import org.springframework.stereotype.Component
 import software.amazon.awssdk.enhanced.dynamodb.Key
 import java.util.UUID
 
-
 @Component
 class DbInitializer(
-    private val dynamoDbTemplate: DynamoDbTemplate
+    private val dynamoDbTemplate: DynamoDbTemplate,
 ) {
     private val log: Logger = LoggerFactory.getLogger(DbInitializer::class.java)
 
@@ -26,10 +25,11 @@ class DbInitializer(
 
         dynamoDbTemplate.save(entity)
 
-        val entityFromDb: Person? = dynamoDbTemplate.load(
-            Key.builder().partitionValue(id.toString()).build(),
-            Person::class.java
-        )
+        val entityFromDb: Person? =
+            dynamoDbTemplate.load(
+                Key.builder().partitionValue(id.toString()).build(),
+                Person::class.java,
+            )
 
         log.info("Found Person from DynamoDb: {}", entityFromDb)
     }
