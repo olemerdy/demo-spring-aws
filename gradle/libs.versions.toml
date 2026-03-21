@@ -1,6 +1,6 @@
 [versions]
-spotless = "8.2.1"
-spring-boot = "4.0.3"
+spotless = "8.4.0"
+spring-boot = "4.0.4"
 spring-cloud-aws = "4.0.0"
 spring-dependency-management = "1.1.7"
 
