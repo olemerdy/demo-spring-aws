@@ -32,16 +32,20 @@ dependencies {
     implementation("io.awspring.cloud:spring-cloud-aws-starter-sns")
     implementation("io.awspring.cloud:spring-cloud-aws-starter-sqs")
     implementation("io.awspring.cloud:spring-cloud-aws-starter-parameter-store")
+
     developmentOnly("org.springframework.boot:spring-boot-devtools")
-    developmentOnly("io.awspring.cloud:spring-cloud-aws-docker-compose")
-    developmentOnly("org.springframework.boot:spring-boot-docker-compose")
+
     testImplementation("org.springframework.boot:spring-boot-starter-actuator-test")
     testImplementation("org.springframework.boot:spring-boot-starter-validation-test")
     testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")
     testImplementation("org.springframework.boot:spring-boot-testcontainers")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testImplementation("org.testcontainers:testcontainers-junit-jupiter")
+    testImplementation("org.testcontainers:localstack")
+    testImplementation("io.awspring.cloud:spring-cloud-aws-testcontainers")
+
     testImplementation(kotlin("test"))
+
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
