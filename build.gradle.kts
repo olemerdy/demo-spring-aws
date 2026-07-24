@@ -41,7 +41,7 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-testcontainers")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
     testImplementation("org.testcontainers:testcontainers-junit-jupiter")
-    testImplementation("org.testcontainers:localstack")
+    testImplementation("org.testcontainers:testcontainers-localstack")
     testImplementation("io.awspring.cloud:spring-cloud-aws-testcontainers")
 
     testImplementation(kotlin("test"))
