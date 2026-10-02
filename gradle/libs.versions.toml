@@ -1,7 +1,7 @@
 [versions]
-spotless = "8.8.0"
-spring-boot = "4.1.0"
-spring-cloud-aws = "4.0.2"
+spotless = "8.10.3"
+spring-boot = "4.1.1"
+spring-cloud-aws = "4.2.0"
 spring-dependency-management = "1.1.7"
 
 [plugins]
